@@ -5,7 +5,7 @@ def _GetUsers():
   return models.Person.objects.all()
   
 def home(request):
-  
+  """The homepage view."""
   context = {
       'variable': 'foo2',
       'users': _GetUsers()} 
